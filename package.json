@@ -1,0 +1,20 @@
+{
+  "name": "ai-knowledge-inbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Save notes and URLs, ask questions over them, get cited answers from a RAG pipeline.",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "node scripts/api.mjs",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "test": "node scripts/test.mjs",
+    "start": "node scripts/api.mjs --no-reload",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
